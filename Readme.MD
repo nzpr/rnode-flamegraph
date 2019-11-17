@@ -31,7 +31,7 @@ Wait till records `Created validator...` or `Parsing validator...` are shown in 
 Put this file into genesis folder.
 
 ```sh
-wget https://gist.githubusercontent.com/nzpr/74c94d29b3070b4d923730b1169ac0e8/raw/96dfc67e5555ab9435936fb56fbcaef0ff050be9/wallets.txt -O ~/.rnode/genesis/wallets.txt
+wget https://raw.githubusercontent.com/nzpr/rnode-flamegraph/master/wallets.txt
 ```
 
 In this file the first line is a wallet that we know private key for. So we can use it to pay for deploys.
