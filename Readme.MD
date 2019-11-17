@@ -45,11 +45,12 @@ REV address: 1111Ysns49wrejhzKeUP25JXFaMhYXVWMz4DALNEh3vCUJBYpHLDz
 
 ## 4. Evaluate 
 
-### Make binary with all the changes. (I'm not fully aware of build process, so please make corrections here. This is how I create docker images).
+### Make binary with all the changes.
 Inside your rchain project folder
 ```sh
-sbt clean rholang/bnfc:clean rholang/bnfc:generate compile sbt node/docker:publishLocal
+sbt clean rholang/bnfc:clean rholang/bnfc:generate compile node/universal:stage
 ```
+this will generate RNode binary in ./node/target/universal/stage/bin/rnode
 
 ### Download and run getflamegraph.sh
 ```
