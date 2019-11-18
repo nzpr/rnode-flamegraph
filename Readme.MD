@@ -59,6 +59,9 @@ wget https://raw.githubusercontent.com/nzpr/rnode-flamegraph/master/getflamegrap
 
 The script inputs .rho contract and outputs the flamegraph of java CPU usage. 
 Accepts only single contract for now.
+
+WARNING! this script cleans state of your node in ~/.rnode.
+
 Script runs rnode in tmux in session `rnode-benchmark`, so if you need to kill that rnode instance, 
 use `tmux kill-session -t "rnode-benchmark"`. This will be called after flamegraph is created and we don't need RNode instance anymore.
 Profiling starts 2 seconds after `propose` call, and lasts for 30 sec. 
